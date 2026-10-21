@@ -1,6 +1,12 @@
-#include<iostream>
+#include <iostream>
+#include "message.h"
 
-int main(){
-    std::cout<<"C++ JSON Binary Project Start"<<std::endl;
+int main() {
+    Message msg{};
+
+    set_message_id(&msg, 1001);
+
+    std::cout << "Message ID: " << msg.message_id << std::endl;
+
     return 0;
 }
