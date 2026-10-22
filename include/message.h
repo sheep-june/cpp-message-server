@@ -14,6 +14,7 @@ typedef struct {
 } Message;
 
 void set_message_id(Message* msg, int id);
+void set_message_priority(Message* msg, int priority);
 
 #ifdef __cplusplus
 }
