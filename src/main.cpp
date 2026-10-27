@@ -12,5 +12,15 @@ int main() {
 
     std::cout << "Priority: " << msg.priority << std::endl;
 
+    set_message_type(&msg, "ABCDEFGHIJKLMNOPQRST");
+    
+    //set_message_type(&msg, "TASK");
+
+    std::cout<< "Message Type: " <<msg.type<<std::endl;
+
+    set_message_payload(&msg, "Hello C++ Server");
+
+    std::cout<<"Message Payload: "<<msg.payload<<std::endl;
+
     return 0;
 }

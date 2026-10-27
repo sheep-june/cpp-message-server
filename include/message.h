@@ -15,6 +15,8 @@ typedef struct {
 
 void set_message_id(Message* msg, int id);
 void set_message_priority(Message* msg, int priority);
+void set_message_type(Message* msg, const char* type);
+void set_message_payload(Message* msg, const char* payload);
 
 #ifdef __cplusplus
 }
