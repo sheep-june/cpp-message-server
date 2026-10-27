@@ -12,9 +12,9 @@ int main() {
 
     std::cout << "Priority: " << msg.priority << std::endl;
 
-    set_message_type(&msg, "ABCDEFGHIJKLMNOPQRST");
+    //set_message_type(&msg, "ABCDEFGHIJKLMNOPQRST");
     
-    //set_message_type(&msg, "TASK");
+    set_message_type(&msg, "TASK");
 
     std::cout<< "Message Type: " <<msg.type<<std::endl;
 
